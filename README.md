@@ -1,4 +1,6 @@
-yui3-storage
-============
+storage
+========
 
-WIP
+An asynchronous database abstraction layer for YUI.
+
+Status: WIP

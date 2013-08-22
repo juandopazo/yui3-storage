@@ -1,0 +1,43 @@
+{
+    "storage": {
+        "requires": [
+            "promise"
+        ],
+
+        "plugins": {
+            "storage-indexeddb": {
+                "condition": {
+                    "trigger": "storage",
+                    "test"   : "indexeddb.js"
+                }
+            },
+            "storage-websql": {
+                "condition": {
+                    "trigger": "storage",
+                    "test"   : "websql.js"
+                },
+                "requires": [
+                    "json"
+                ]
+            },
+            "storage-local": {
+                "condition": {
+                    "trigger": "storage",
+                    "test"   : "localstorage.js"
+                },
+                "requires": [
+                    "json"
+                ]
+            },
+            "storage-memory": {
+                "condition": {
+                    "trigger": "storage",
+                    "test"   : "memory.js"
+                },
+                "requires": [
+                    "json"
+                ]
+            }
+        }
+    }
+}

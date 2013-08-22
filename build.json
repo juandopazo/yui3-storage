@@ -1,0 +1,34 @@
+{
+    "name": "storage",
+    "builds": {
+        "storage": {
+            "jsfiles": [
+                "storage.js"
+            ]
+        },
+        "storage-indexeddb": {
+            "jsfiles": [
+            	"indexeddb/database.js",
+                "indexeddb/store.js"
+            ]
+        },
+        "storage-websql": {
+            "jsfiles": [
+            	"websql/database.js",
+                "websql/store.js"
+            ]
+        },
+        "storage-local": {
+            "jsfiles": [
+                "localstorage/database.js",
+                "localstorage/store.js"
+            ]
+        },
+        "storage-memory": {
+            "jsfiles": [
+            	"memory/database.js",
+                "memory/store.js"
+            ]
+        }
+    }
+}
